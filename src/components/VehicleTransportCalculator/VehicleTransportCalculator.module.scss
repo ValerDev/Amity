@@ -1,0 +1,153 @@
+@import '../../assets/variables.scss';
+
+.vehicleTransportCalculator {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: -8px;
+    gap: 71px;
+    .mainContent {
+        display: flex;
+        gap: 213px;
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 41px;
+            margin-top: 30px;
+            h2 {
+                font-family: 'Agency FB';
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 100%;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+            .inputBlock {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                input[type=text]{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 100%;
+                    display: flex;
+                    width: 351px;
+                    padding: 11.5px 52px;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid #FF5408;
+                    box-shadow: 0px 0px 15px 0px rgba(142, 142, 142, 0.30) inset;
+                    outline: none;
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 100%
+                }
+            }
+            .radioInputContent {
+                display: flex;
+                gap: 42px;
+                .radioInputBlock{
+                    display: flex;
+                    align-items: center;
+                    gap: 22px;
+                    p{
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 100%
+                    }
+                    .customRadio{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 24px;
+                        height: 24px;
+                        border: 6px solid $base-color;
+                        border-radius: 50%;
+                        input[type=radio] {
+                            appearance: none;
+                            width: 10.5px;
+                            height: 10.5px;
+                            accent-color: $base-color;
+                            border-radius:50%;
+                         }
+                         input[type=radio]:checked {
+                            background-color: $base-color;
+                            border-radius: 50%;
+                            box-shadow: inset 0 0 14px -8px #000000;
+                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .callUs {
+        position: relative;
+        width: 318px;
+        height: 459px;
+        background-color: $base-color;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .description {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 130%;
+                letter-spacing: 1.2px;
+            }
+
+            .orCall {
+                color: $white;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 175%;
+                white-space: nowrap;
+            }
+
+            .callNumber {
+                color: $white;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 175%;
+                white-space: nowrap;
+
+            }
+        }
+    }
+    .confirm{
+        border-radius: 9px;
+        background: #FF5408;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: $white;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 209px;
+        height: 58px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            box-shadow: 0px 0px 15px 2px #FF540877, inset 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
