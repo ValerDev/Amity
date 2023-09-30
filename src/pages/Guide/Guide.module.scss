@@ -1,0 +1,39 @@
+@import '../../assets/variables.scss';
+.guide {
+    position: relative;
+    margin-top: 320px;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 63px;
+        .whatYouNeedBlock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 34px;
+            h3 {
+                font-family: 'Agency FB';
+                font-size: 48px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 24px;
+                color: $light-text;
+                text-align: center;
+            }
+        }
+        .guideItems{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+    .ship{
+        position: absolute;
+        top: 85%;
+        left: 0;
+    }
+}
