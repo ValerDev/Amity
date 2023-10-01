@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.eabf20f7.css",
-    "main.js": "/static/js/main.83d89019.js",
+    "main.css": "/static/css/main.f63c59b7.css",
+    "main.js": "/static/js/main.e9f0d43a.js",
     "static/js/787.65276425.chunk.js": "/static/js/787.65276425.chunk.js",
     "static/media/homeBackground.png": "/static/media/homeBackground.3b38aa2f29391219c7bf.png",
-    "static/media/weTransportBackground.png": "/static/media/weTransportBackground.f1817c972a3f91b769bf.png",
+    "static/media/footerSliderBackground3.png": "/static/media/footerSliderBackground3.1126bd081e06bc842677.png",
+    "static/media/helpBackground.png": "/static/media/helpBackground.f1817c972a3f91b769bf.png",
+    "static/media/footerSliderBackground2.png": "/static/media/footerSliderBackground2.026d417cc430e71daac3.png",
+    "static/media/footerSliderBackground1.png": "/static/media/footerSliderBackground1.166e439ac52c813fe13a.png",
     "static/media/backgroundPuzzle.png": "/static/media/backgroundPuzzle.a644ab3205d3691aa11f.png",
+    "static/media/Agency_FB_Light.ttf": "/static/media/Agency_FB_Light.656816e6e8a23f957792.ttf",
+    "static/media/whyAmityBackground.png": "/static/media/whyAmityBackground.4a85e512a7ef667b9c3f.png",
     "static/media/callUsBackground.png": "/static/media/callUsBackground.ee744d9aaad570ab758c.png",
+    "static/media/bus.png": "/static/media/bus.dc130f34fa9d11d971e8.png",
+    "static/media/object2.png": "/static/media/object2.8b6308eb4f0dbb1db617.png",
+    "static/media/object1.png": "/static/media/object1.4a6e4d34fce261f8205d.png",
     "static/media/pace.png": "/static/media/pace.ce70fc5bb74718578bdd.png",
     "static/media/reliability.png": "/static/media/reliability.e566eb528f4e4fc86f4a.png",
     "static/media/ship.png": "/static/media/ship.d225db49df04a6d890ed.png",
     "static/media/flexibility.png": "/static/media/flexibility.5b8c4db17f24680f63f9.png",
     "static/media/logo.svg": "/static/media/logo.92d6642ba863d762ad44c144fdc2b4bd.svg",
+    "static/media/logoWhite.svg": "/static/media/logoWhite.910ec4c796f0d747cf06ca883a06170c.svg",
     "index.html": "/index.html",
-    "main.eabf20f7.css.map": "/static/css/main.eabf20f7.css.map",
-    "main.83d89019.js.map": "/static/js/main.83d89019.js.map",
+    "main.f63c59b7.css.map": "/static/css/main.f63c59b7.css.map",
+    "main.e9f0d43a.js.map": "/static/js/main.e9f0d43a.js.map",
     "787.65276425.chunk.js.map": "/static/js/787.65276425.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eabf20f7.css",
-    "static/js/main.83d89019.js"
+    "static/css/main.f63c59b7.css",
+    "static/js/main.e9f0d43a.js"
   ]
 }

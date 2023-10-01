@@ -1,4 +1,4 @@
-export const weTransportItems = [
+export const helpItems = [
     {
         title: 'VEHICLES',
         items: ['Cars', 'Trucks', 'Heavy Duty', 'Motorcycles', 'ATVs', 'Utvs', 'Rvs']

@@ -1,0 +1,170 @@
+@import '../../assets/variables.scss';
+
+.footer {
+  margin-top: 300px;
+
+  .contactInformationContent {
+    position: relative;
+    padding: 44px 0;
+
+    .contactInformation {
+      display: flex;
+      justify-content: center;
+      gap: 111px;
+
+      .infoBlock {
+        display: flex;
+        align-items: flex-end;
+        gap: 22px;
+
+        p {
+          text-align: center;
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 120%;
+        }
+      }
+
+    }
+
+    .line {
+      width: 842px;
+      height: 3px;
+      background-color: $light-text;
+      margin: 47px auto 23px;
+    }
+
+    >img {
+      position: absolute;
+    }
+
+    .subtitle {
+      >h2 {
+        font-family: $second-font;
+        text-align: center;
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 137.5%;
+      }
+
+      >h3 {
+        text-align: center;
+        font-family: "Agency FB Light";
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 137.5%;
+      }
+    }
+  }
+
+  .mainFooter {
+    display: flex;
+    width: 100%;
+    height: 541px;
+    background-color: $base-color;
+    margin-top: 23px;
+
+    .footerBlock1 {
+      margin-left: 151px;
+
+      >img {
+        margin-top: 52px;
+      }
+
+      .aboutUsBlock {
+        width: 332px;
+        margin-top: 48px;
+        margin-bottom: 98px;
+
+        .title {
+          color: $white;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .description {
+          color: $white;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 144%;
+        }
+      }
+
+      .license {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+      }
+    }
+
+    .footerBlock2 {
+      margin-left: 639px;
+      display: flex;
+      gap: 136px;
+      color: $white;
+      margin-top: 137px;
+
+      .solutions {
+        >h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 100%;
+          margin-bottom: 20px;
+        }
+
+        >h4 {
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 100%;
+          margin-bottom: 7.45px;
+        }
+
+        >p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 100%;
+          margin-bottom: 12px;
+        }
+      }
+
+      .loose {
+        >h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 100%;
+          margin-bottom: 20px;
+        }
+
+
+        >p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 100%;
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    .footerBlock3 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 51px;
+      margin-top: 337px;
+      gap: 60px;
+      .messages{
+        display: flex;
+        justify-content: flex-end;
+      }
+      .socialMediaBlock{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+    }
+  }
+}

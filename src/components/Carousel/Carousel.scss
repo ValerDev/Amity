@@ -1,0 +1,58 @@
+@import '../../assets/variables.scss';
+
+.carousel {
+    .slideBlock {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .title {
+                color: #FFF;
+                text-align: center;
+                font-family: $second-font;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 144%;
+            }
+
+            .description {
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 190%;
+                text-align: center;
+            }
+        }
+    }
+
+    .carousel-arrow.block.carousel-prev {
+        &:before {
+            content: '';
+            width: 37px;
+            height: 78px;
+            background-image: url('../../assets/images/Footer/sliderArrowLeft.png');
+            transform: translateX(233px);
+        }
+    }
+    .carousel-arrow.block.carousel-next {
+        &:before {
+            content: '';
+            width: 37px;
+            height: 78px;
+            background-image: url('../../assets/images/Footer/sliderArrowRight.png');
+            transform: translateX(-233px);
+        }
+    }
+}

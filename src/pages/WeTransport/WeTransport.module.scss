@@ -2,36 +2,36 @@
 
 .weTransport {
     position: relative;
-    margin-top: 75px;
 
-    img {
-        width: 100%;
-        height: 665px;
-    }
+    .howDoIt {
+        position: relative;
 
-    .weTransportContent {
-        position: absolute;
-        top: 28%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        gap: 133px;
+        div {
+            position: relative;
+            width: max-content;
 
-        .weTransportTitle {
-            color: $white;
-            font-size: 40px;
-
-            h3 {
-                font-family: 'Agency FB';
-                margin-bottom: 51px;
+            >h3 {
+                font-family: $second-font;
+                font-size: 36px;
                 font-weight: 700;
+                line-height: 100%;
+                margin-bottom: 34px;
             }
 
-            .weTransportChild {
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 158%;
-            }
         }
+        p {
+            color: $light-text;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 120.5%;
+            margin-bottom: 30px;
+        }
+    }
+    .line{
+        height: 2px;
+        background-color: $base-color;
+        width: 100%;
+        margin: 0 auto;
+        transform: translateY(75px);
     }
 }
