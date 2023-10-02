@@ -29,7 +29,7 @@ export const WhyAmity = () => {
                 <h4 className={s.title}>COMMUNICATION</h4>
                 <p className={s.description}>Here at Amity Transport we evaluate the communication and are ready to enlighten all questions arising about the transportation. We do think that communication is the key and will be in touch during the whole shipping process.</p>
             </div>
-            <img src={whyAmityBackground} alt="whyAmityBackground" />
         </div>
+            <img src={whyAmityBackground} alt="whyAmityBackground" />
     </div>
 }

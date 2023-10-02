@@ -48,34 +48,37 @@ export const Footer = () => {
                 </p>
             </div>
             <div className={s.footerBlock2}>
-                <div className={s.solutions}>
-                    <h3>Solutions</h3>
-                    <h4>For Individuals</h4>
-                    <p>Student</p>
-                    <p>Military</p>
-                    <h4>For Businesses</h4>
-                    <p>One-Time</p>
-                    <p>Long term</p>
+                <div className={s.links}>
+                    <div className={s.solutions}>
+                        <h3>Solutions</h3>
+                        <h4>For Individuals</h4>
+                        <p>Student</p>
+                        <p>Military</p>
+                        <p>For Businesses</p>
+                        <p>One-Time</p>
+                        <p>Long term</p>
+                    </div>
+                    <div className={s.loose}>
+                        <h3>Loose</h3>
+                        <p>Privacy Policy</p>
+                        <p>Terms and Conditions</p>
+                        <p>Cookie policy</p>
+                        <p>Copyright</p>
+                        <p>Terms of Use</p>
+                    </div>
                 </div>
-                <div className={s.loose}>
-                    <h3>Loose</h3>
-                    <p>Privacy Policy</p>
-                    <p>Terms and Conditions</p>
-                    <p>Cookie policy</p>
-                    <p>Copyright</p>
-                    <p>Terms of Use</p>
+                <div className={s.social}>
+                    <div className={s.messages}>
+                        <img src={message} alt='message' />
+                    </div>
+                    <div className={s.socialMediaBlock}>
+                        <img src={youtube} alt="youtube" />
+                        <img src={facebook} alt="facebook" />
+                        <img src={instagram} alt="instagram" />
+                    </div>
                 </div>
             </div>
-            <div className={s.footerBlock3}>
-                <div className={s.messages}>
-                    <img src={message} alt='message' />
-                </div>
-                <div className={s.socialMediaBlock}>
-                    <img src={youtube} alt="youtube" />
-                    <img src={facebook} alt="facebook" />
-                    <img src={instagram} alt="instagram" />
-                </div>
-            </div>
+            <div className={s.line}/>
         </div>
     </div>
 }
