@@ -1,11 +1,13 @@
 @import '../../assets/variables.scss';
 
 .weTransport {
+    width: 100%;
     position: relative;
 
     .howDoIt {
         position: relative;
-
+        width: max-content;
+        margin: 0 auto;
         div {
             position: relative;
             width: max-content;

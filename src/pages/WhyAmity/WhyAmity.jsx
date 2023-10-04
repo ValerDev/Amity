@@ -1,6 +1,5 @@
 import React from "react";
 import s from './WhyAmity.module.scss';
-import whyAmityBackground from '../../assets/images/WhyAmity/whyAmityBackground.png'
 
 export const WhyAmity = () => {
     return <div className={s.whyAmity}>
@@ -32,6 +31,6 @@ export const WhyAmity = () => {
                 <p className={s.description}>Here at Amity Transport we evaluate the communication and are ready to enlighten all questions arising about the transportation. We do think that communication is the key and will be in touch during the whole shipping process.</p>
             </div>
         </div>
-        <img src={whyAmityBackground} alt="whyAmityBackground" />
+        <div className={s.whyAmityBackground}></div>
     </div>
 }

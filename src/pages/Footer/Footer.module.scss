@@ -1,6 +1,7 @@
 @import '../../assets/variables.scss';
 
 .footer {
+  width: 100%;
   margin-top: 100px;
 
   .contactInformationContent {
@@ -59,135 +60,153 @@
 
   .mainFooter {
     display: flex;
-    justify-content: space-between;
     position: relative;
     width: 100%;
-    height: 541px;
     background-color: $base-color;
-    margin-top: 23px;
 
-    .footerBlock1 {
-      margin-left: 151px;
-
-      >img {
-        margin-top: 52px;
-      }
-
-      .aboutUsBlock {
-        width: 332px;
-        margin-top: 48px;
-        margin-bottom: 98px;
-
-        .title {
-          color: $white;
-          font-size: 24px;
-          font-weight: 500;
-          line-height: normal;
-        }
-
-        .description {
-          color: $white;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 144%;
-        }
-      }
-
-      .license {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%;
-      }
-    }
-
-    .footerBlock2 {
+    .footerContent {
       display: flex;
       flex-direction: column;
-
-      margin-top: 137px;
-      margin-right: 155px;
-
-      .links {
-        display: flex;
-        gap: 136px;
-        color: $white;
-        margin-right: 149px;
-
-        .solutions {
-          >h3 {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 100%;
-            margin-bottom: 20px;
-          }
-
-          >h4 {
-            font-family: Poppins;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%;
-            margin-bottom: 7.45px;
-          }
-
-          >p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 100%;
-            margin-bottom: 12px;
-          }
-        }
-
-        .loose {
-          >h3 {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 100%;
-            margin-bottom: 20px;
-          }
-
-
-          >p {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 100%;
-            margin-bottom: 12px;
-          }
-        }
-
-      }
-
-      .social {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        gap: 59px;
-
-        .messages {
-          display: flex;
-          justify-content: flex-end;
-        }
-
-        .socialMediaBlock {
-          display: flex;
-          align-items: center;
-          gap: 28px;
-        }
-      }
-    }
-
-    .line {
-      height: 2px;
-      width: 84%;
+      justify-content: space-between;
+      position: relative;
       margin: 0 auto;
-      position: absolute;
-      bottom: 22%;
-      left: 50%;
-      transform: translate(-50.2%, -50%);
-      opacity: 0.2;
-      background: #000;
+      width: 80%;
+
+      .footerBlock1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .imgBlock {
+          >img {
+            margin-top: 52px;
+          }
+        }
+
+
+
+        .links {
+          display: flex;
+          justify-content: space-between;
+          color: $white;
+
+          .aboutUsBlock {
+            width: 332px;
+            margin-top: 48px;
+
+            .title {
+              color: $white;
+              font-size: 24px;
+              font-weight: 500;
+              line-height: normal;
+            }
+
+            .description {
+              color: $white;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 144%;
+            }
+          }
+          .SLBlock {
+              display: flex;
+              gap: 136px;
+            .solutions {
+              >h3 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 100%;
+                margin-bottom: 20px;
+              }
+              .solutionsContent{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .subBlock{
+                  
+                  >h4 {
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%;
+                    margin-bottom: 7px;
+                  }
+      
+                  >p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 160%;
+                  }
+                }
+              }
+            }
+  
+            .loose {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              >h3 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 100%;
+                margin-bottom: 20px;
+              }
+  
+  
+              >p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 160%;
+              }
+            }
+          }
+
+        }
+      }
+
+      .footerBlock2 {
+        display: flex;
+        flex-direction: column;
+
+        .social {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          width: 100%;
+
+          .messages {
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          .LSBlock {
+            display: flex;
+            justify-content: space-between;
+
+            .socialMediaBlock {
+              display: flex;
+              align-items: center;
+              gap: 28px;
+            }
+
+            .license {
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 122%;
+            }
+          }
+        }
+      }
+
+      .line {
+        height: 2px;
+        width: 100%;
+        opacity: 0.2;
+        background: #000;
+      }
     }
   }
 }

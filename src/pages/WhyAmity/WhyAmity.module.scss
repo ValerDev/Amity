@@ -3,6 +3,7 @@
 .whyAmity {
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
     margin-top: 110px;
     position: relative;
@@ -103,6 +104,17 @@
     >img {
         width: 100%;
         position: absolute;
+        bottom: 0%;
+    }
+    .whyAmityBackground {
+        background-image: url('../../assets/images/WhyAmity/whyAmityBackground.png');
+        background-position: center center;
+        background-size: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 745px;
+        width: 100%;
         bottom: 0%;
     }
 }

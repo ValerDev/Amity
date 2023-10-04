@@ -8,7 +8,6 @@ import ship from '../../assets/images/Guide/ship.png'
 export const Guide = () => {
     
     return <div className={s.guide}>
-        <div className="layout">
             <div className={s.content}>
                 <div className={s.whatYouNeedBlock}>
                     <h3 >WHAT YOU NEED IS WHAT WE DO</h3>
@@ -21,7 +20,6 @@ export const Guide = () => {
                     {guideItems.map(item => <GuideItem image={item.image} title={item.title} description={item.description} key={item.title}/>)}
                 </div>
             </div>
-        </div>
         <img src={ship} alt="ship" className={s.ship}/>
     </div>
 }

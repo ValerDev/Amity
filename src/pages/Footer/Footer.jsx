@@ -34,51 +34,66 @@ export const Footer = () => {
             </div>
         </div>
         <div className={s.mainFooter}>
-            <div className={s.footerBlock1}>
-                <img src={logoWhite} alt="logoWhite" />
-                <div className={s.aboutUsBlock}>
-                    <h3 className={s.title}>About us</h3>
-                    <p className={s.description}>Our team consists of experienced logistic specialists and lovely support representatives who are ready to wipe up your daily stress and fill your day with peace of mind.</p>
+            <div className={s.footerContent}>
+                <div className={s.footerBlock1}>
+                    <div className={s.imgBlock}>
+                        <img src={logoWhite} alt="logoWhite" />
+                    </div>
+
+                    <div className={s.links}>
+                        <div className={s.aboutUsBlock}>
+                            <h3 className={s.title}>About us</h3>
+                            <p className={s.description}>Our team consists of experienced logistic specialists and lovely support representatives who are ready to wipe up your daily stress and fill your day with peace of mind.</p>
+                        </div>
+                        <div className={s.SLBlock}>
+                            <div className={s.solutions}>
+                                <h3>Solutions</h3>
+                                <div className={s.solutionsContent}>
+                                    <div className={s.subBlock}>
+                                        <h4>For Individuals</h4>
+                                        <p>Student</p>
+                                        <p>Military</p>
+                                    </div>
+                                    <div className={s.subBlock}>
+                                        <h4>For Businesses</h4>
+                                        <p>One-Time</p>
+                                        <p>Long term</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={s.loose}>
+                                <h3>Loose</h3>
+                                <p>Privacy Policy</p>
+                                <p>Terms and Conditions</p>
+                                <p>Cookie policy</p>
+                                <p>Copyright</p>
+                                <p>Terms of Use</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p className={s.license}>
-                    © 2023 TRUST CARGO TRUCKING SERVICES INC<br />
-                    DBA Amity Transportation<br />
-                    1200 Brickell Ave Ste 1950<br />
-                    Miami, FL 33131<br />
-                </p>
+                <div className={s.footerBlock2}>
+                    <div className={s.social}>
+                        <div className={s.messages}>
+                            <img src={message} alt='message' />
+                        </div>
+                        <div className={s.line} />
+                        <div className={s.LSBlock}>
+                            <p className={s.license}>
+                                © 2023 TRUST CARGO TRUCKING SERVICES INC<br />
+                                DBA Amity Transportation<br />
+                                1200 Brickell Ave Ste 1950<br />
+                                Miami, FL 33131<br />
+                            </p>
+                            <div className={s.socialMediaBlock}>
+                                <img src={youtube} alt="youtube" />
+                                <img src={facebook} alt="facebook" />
+                                <img src={instagram} alt="instagram" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className={s.footerBlock2}>
-                <div className={s.links}>
-                    <div className={s.solutions}>
-                        <h3>Solutions</h3>
-                        <h4>For Individuals</h4>
-                        <p>Student</p>
-                        <p>Military</p>
-                        <p>For Businesses</p>
-                        <p>One-Time</p>
-                        <p>Long term</p>
-                    </div>
-                    <div className={s.loose}>
-                        <h3>Loose</h3>
-                        <p>Privacy Policy</p>
-                        <p>Terms and Conditions</p>
-                        <p>Cookie policy</p>
-                        <p>Copyright</p>
-                        <p>Terms of Use</p>
-                    </div>
-                </div>
-                <div className={s.social}>
-                    <div className={s.messages}>
-                        <img src={message} alt='message' />
-                    </div>
-                    <div className={s.socialMediaBlock}>
-                        <img src={youtube} alt="youtube" />
-                        <img src={facebook} alt="facebook" />
-                        <img src={instagram} alt="instagram" />
-                    </div>
-                </div>
-            </div>
-            <div className={s.line}/>
         </div>
     </div>
 }

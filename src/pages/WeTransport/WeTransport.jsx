@@ -11,32 +11,28 @@ import bus from '../../assets/images/WeTransport/bus.png'
 
 export const WeTransport = () => {
     return <div className={s.weTransport}>
-        <div className="layout">
-            <VehicleTransportCalculator />
-        </div>
+        <VehicleTransportCalculator />
         <img alt='object' src={object1} style={{ position: 'absolute', top: '15%', left: '10%' }} />
         <img alt='object' src={object2} style={{ position: 'absolute', top: '20%', right: '10%' }} />
         <img alt='object' src={object3} style={{ position: 'absolute', bottom: '24%', left: '17%' }} />
-        <div className="layout">
 
-            <div className={s.howDoIt}>
-                <div>
-                    <h3>HOW TO DO IT</h3>
-                    <img alt='arrow' src={arrow1} style={{ position: 'absolute', top: '40%', left: '130%' }} />
-                </div>
-                <div>
-                    <p>1. Request a quote and book the order</p>
-                    <img alt='arrow' src={arrow2} style={{ position: 'absolute', top: '40%', left: '110%' }} />
-                </div>
-                <div>
-                    <p>2. Provide all the necessary information to your logistics coordinator</p>
-                    <img alt='arrow' src={arrow3} style={{ position: 'absolute', top: '40%', left: '75%' }} />
-                </div>
-                    <p>3. RELAX</p>
+        <div className={s.howDoIt}>
+            <div>
+                <h3>HOW TO DO IT</h3>
+                <img alt='arrow' src={arrow1} style={{ position: 'absolute', top: '40%', left: '130%' }} />
             </div>
-
-            <img alt='bus' src={bus} style={{ position: 'absolute', top: '92%', right: '0%' }} />
+            <div>
+                <p>1. Request a quote and book the order</p>
+                <img alt='arrow' src={arrow2} style={{ position: 'absolute', top: '40%', left: '110%' }} />
+            </div>
+            <div>
+                <p>2. Provide all the necessary information to your logistics coordinator</p>
+                <img alt='arrow' src={arrow3} style={{ position: 'absolute', top: '40%', left: '75%' }} />
+            </div>
+            <p>3. RELAX</p>
         </div>
-        <div className={s.line}/>
+
+        <img alt='bus' src={bus} style={{ position: 'absolute', top: '92%', right: '0%' }} />
+        <div className={s.line} />
     </div>
 }
