@@ -1,6 +1,5 @@
 import React from "react";
 import s from './VehicleTransportCalculator.module.scss'
-import callUsBackground from '../../assets/images/WeTransport/callUsBackground.png';
 
 export const VehicleTransportCalculator = () => {
     return <div className={s.vehicleTransportCalculator}>
@@ -15,7 +14,7 @@ export const VehicleTransportCalculator = () => {
                     <p>where to</p>
                     <input type="text" placeholder="city or zip" />
                 </div>
-                <div className={s.inputBlock}>
+                <div className={`${s.inputBlock} ${s.radioBlock}`}>
                     <p>transportation type</p>
                     <div className={s.radioInputContent}>
                         <div className={s.radioInputBlock}>
@@ -32,9 +31,10 @@ export const VehicleTransportCalculator = () => {
                         </div>
                     </div>
                 </div>
+                <button className={s.confirmMobile}>CONFIRM</button>
+
             </div>
             <div className={s.callUs}>
-                <img src={callUsBackground} alt="callUsBackground" />
                 <div className={s.content}>
                     <p className={s.description}>provide us a little bit of information about your order</p>
                     <p className={s.orCall}>or call us at</p>

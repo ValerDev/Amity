@@ -1,4 +1,5 @@
 @import '../../assets/variables.scss';
+
 .header {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,14 @@
     width: 100%;
     gap: 60px;
     margin-top: 107px;
+
+    @media (max-width: 1050px) {
+        margin-top: unset;
+    }
+    @media (max-width: 525px) {
+        gap: unset;           
+    }
+
     .navBar {
         display: flex;
         align-items: flex-end;
@@ -36,6 +45,17 @@
         margin-top: 177px;
         margin-bottom: 154px;
         letter-spacing: 2.88px;
+
+        @media (max-width: 1050px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 525px) {
+            font-size: 27px;
+            margin-bottom: 15px;
+            margin-top: unset;
+            margin-top: 91px;
+        }
     }
 
     .getAnInstantQuotieBtn {
@@ -55,8 +75,85 @@
         font-weight: 400;
         transition: .3s;
         letter-spacing: 3.1px;
+
         &:hover {
             box-shadow: 0px 0px 15px 2px #FF540877, inset 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (max-width: 525px) {
+            display: flex;
+            width: 144px;
+            height: 21px;
+            padding: unset;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 9px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.395px;
+        }
+    }
+}
+
+.mobileHeader {
+    width: 100%;
+    background-color: $base-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 17px;
+
+    .logoBlock {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 10px;
+
+        .logoWhite {
+            width: 80px;
+
+            @media (max-width: 1050px) {
+                width: 45px;
+            }
+        }
+
+        .emailIcon {
+            width: 35px;
+            cursor: pointer;
+
+            @media (max-width: 1050px) {
+                width: unset;
+            }
+        }
+
+        .line {
+            width: 1px;
+            height: 100%;
+            background-color: $light-gray;
+            opacity: .5;
+        }
+    }
+
+    .linksBlock {
+        display: flex;
+        gap: 24px;
+
+        .link {
+            white-space: nowrap;
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: .3s;
+            outline: none;
+            font-size: 13px;
+
+            @media (max-width: 1050px) {
+                font-size: 9px;
+            }
         }
     }
 }

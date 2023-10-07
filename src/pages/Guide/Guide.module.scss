@@ -1,44 +1,105 @@
 @import '../../assets/variables.scss';
+
 .guide {
-        display: flex;
-        position: relative;
-        width: 100%;
-        flex-direction: column;
-         background-image: url('../../assets/images/Guide/GuidBackground.png');
-         background-size: 100%;
-         background-position: top;
-         background-repeat: no-repeat;
-        // margin-top: -550px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    background-image: url('../../assets/images/Guide/GuidBackground.png');
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    // margin-top: -550px;
     .content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 20px;
+
         .whatYouNeedBlock {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
             gap: 34px;
             max-width: 1018px;
+
+            @media (max-width: 525px) {
+                padding-bottom: 25px;
+                border-bottom: 13px solid $light-border;
+
+                .busMobile {
+                    width: 42px;
+                    height: 26px;
+                    background-image: url('../../assets/images/Guide/busMobile.png');
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+                }
+            }
+
             h3 {
                 font-family: $second-font;
                 font-size: 48px;
                 font-weight: 700;
+
+                @media (max-width: 1050px) {
+                    font-size: 38px;
+                }
+
+                @media (max-width: 525px) {
+                    font-size: 22px;
+                }
             }
+
             p {
                 font-size: 24px;
                 color: $light-text;
                 text-align: center;
+
+                @media (max-width: 1050px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 525px) {
+                    font-size: 12px;
+                }
             }
         }
-        .guideItems{
+
+        .guideItems {
             display: flex;
             align-items: flex-start;
             justify-content: center;
+            gap: 39px;
+
+            @media (max-width: 1050px) {
+                flex-direction: column;
+            }
         }
     }
-    .ship{
+
+    .ship {
         margin-right: auto;
+
+        @media (max-width: 1050px) {
+            margin-left: auto;
+            margin-right: 0;
+            width: 124px;
+        }
+    }
+
+    .homeIcon {
+        display: none;
+        @media (max-width: 1050px) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 31.435px;
+            height: 40.305px;
+            left: 30%;
+        }
     }
 }

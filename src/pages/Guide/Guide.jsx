@@ -3,6 +3,7 @@ import s from './Guide.module.scss';
 import { guideItems } from "./data";
 import { GuideItem } from "../../components/GuideItem/GuideItem";
 import ship from '../../assets/images/Guide/ship.png'
+import homeIcon from '../../assets/images/Guide/homeIcon.png'
 
 
 export const Guide = () => {
@@ -20,6 +21,7 @@ export const Guide = () => {
                 provide flexible and affordable logistical solutions for the
                 transportation of your vehicles, cargo and equipment.
               </p>
+              <div className={s.busMobile}/>
             </div>
             <div className={s.guideItems}>
               {guideItems.map((item) => (
@@ -33,6 +35,7 @@ export const Guide = () => {
             </div>
           </div>
           <img src={ship} alt="ship" className={s.ship} />
+          <img src={homeIcon} alt="homeIcon" className={s.homeIcon} />
         </div>
       </>
     );

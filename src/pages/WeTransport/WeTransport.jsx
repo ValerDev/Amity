@@ -11,15 +11,15 @@ export const WeTransport = () => {
         <div className={s.howDoIt}>
             <div>
                 <h3>HOW TO DO IT</h3>
-                <img alt='arrow' src={arrow1} style={{ position: 'absolute', top: '40%', left: '130%' }} />
+                <img alt='arrow' src={arrow1} className={s.arrow1} />
             </div>
             <div>
                 <p>1. Request a quote and book the order</p>
-                <img alt='arrow' src={arrow2} style={{ position: 'absolute', top: '40%', left: '110%' }} />
+                <img alt='arrow' src={arrow2} className={s.arrow2} />
             </div>
             <div>
                 <p>2. Provide all the necessary information to your logistics coordinator</p>
-                <img alt='arrow' src={arrow3} style={{ position: 'absolute', top: '40%', left: '75%' }} />
+                <img alt='arrow' src={arrow3} className={s.arrow3} />
             </div>
             <p>3. RELAX</p>
         </div>
