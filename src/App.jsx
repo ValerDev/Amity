@@ -14,7 +14,7 @@ function App() {
       <Help/>
       <WeTransport/>
       <WhyAmity/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

@@ -92,13 +92,19 @@
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 1050px) {
-            background-size: 100%;
+            background-size: contain;
             background-image: url("../../assets/images/WhyAmity/whyAmityBackgroundMobile.svg");
-            padding: 20px 0;
+            margin: 20px 0;
+            height: 520px;
         }
-        // @media (max-width: 1800px) {
-        //     background-size: 100% 100%;
-        // }
+        @media (max-width: 525px) {
+           background-size: 100% 102%;
+           background-position: -15px 0px;
+           height: 520px;
+        }
+        @media (max-width: 430px) {
+            background-size: 100% 115%;
+        }
         .servicesContent {
             position: relative;
             padding-bottom: 80px;
@@ -130,11 +136,24 @@
                     display: flex;
                     margin-top: 7px;
                     gap: 89px;
-                    @media (max-width: 525px) {
+                    @media (max-width: 1050px) {
                         gap: 25px;
+                    }
+                    @media (max-width: 550px) {
+                        gap: 25px;
+                        margin-left: 2rem;
                     }
                     .serviceBlock {
                         width: 208px;
+
+                        @media (max-width: 1050px) {
+                            width: 85px;
+                            margin-bottom: 2rem;
+                        }
+
+                        @media (max-width: 550px) {
+                            width: 65px;
+                        }
 
                         >.title {
                             font-size: 20px;
@@ -157,9 +176,6 @@
                                 font-size: 8px;
                             }
                         }
-                        @media (max-width: 1050px) {
-                            width: 64px;
-                        }
                     }
                 }
             }
@@ -169,8 +185,12 @@
                 margin-top: -200px;
                 @media (max-width: 1050px) {
                     width: 125px;
-                    margin-top: -35px;
+                    margin-top: 80px;
                     margin-left: -60px;
+                }
+                @media (max-width: 550px) {
+                    margin-top: auto;
+                    margin-left: unset;
                 }
                 >.title {
                     font-size: 20px;

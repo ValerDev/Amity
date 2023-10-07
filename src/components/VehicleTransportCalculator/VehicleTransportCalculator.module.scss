@@ -37,6 +37,9 @@
                 line-height: 100%;
                 text-transform: uppercase;
                 white-space: nowrap;
+                @media (max-width: 525px) {
+                    font-size: 30px;
+                }
             }
 
             .inputBlock {
