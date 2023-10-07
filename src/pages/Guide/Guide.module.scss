@@ -1,19 +1,26 @@
 @import '../../assets/variables.scss';
 .guide {
-    position: relative;
-    margin-top: 320px;
-    width: 100%;
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+         background-image: url('../../assets/images/Guide/GuidBackground.png');
+         background-size: 100%;
+         background-position: top;
+         background-repeat: no-repeat;
+        // margin-top: -550px;
     .content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 63px;
+        gap: 20px;
         .whatYouNeedBlock {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 34px;
+            max-width: 1018px;
             h3 {
                 font-family: $second-font;
                 font-size: 48px;
@@ -32,8 +39,6 @@
         }
     }
     .ship{
-        position: absolute;
-        top: 85%;
-        left: 0;
+        margin-right: auto;
     }
 }

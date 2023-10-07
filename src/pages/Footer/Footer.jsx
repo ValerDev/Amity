@@ -3,8 +3,6 @@ import s from './Footer.module.scss';
 import { Carousel } from "../../components/Carousel/Carousel";
 import location from '../../assets/images/Footer/location.png';
 import phone from '../../assets/images/Footer/phone.png';
-import object1 from '../../assets/images/Footer/object1.png';
-import object2 from '../../assets/images/Footer/object2.png';
 import logoWhite from '../../assets/images/logoWhite.svg';
 import facebook from '../../assets/images/Footer/facebook.png';
 import message from '../../assets/images/Footer/message.png';
@@ -26,8 +24,6 @@ export const Footer = () => {
                 </div>
             </div>
             <div className={s.line} />
-            <img src={object1} alt="object1" style={{ left: '0', bottom: '0' }} />
-            <img src={object2} alt="object2" style={{ right: '0', top: '0' }} />
             <div className={s.subtitle}>
                 <h3>wish you all the best</h3>
                 <h2>YOUR AMITY.</h2>

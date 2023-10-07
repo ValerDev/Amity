@@ -1,11 +1,11 @@
-@import '../../assets/variables.scss';
+@import "../../assets/variables.scss";
 
 .whyAmity {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 110px;
+    margin-top: 48px;
     position: relative;
 
     .heading {
@@ -26,7 +26,7 @@
         background-color: $base-color;
         padding: 33px 20px;
 
-        .subTitle {
+        .subTitle { 
             font-family: $second-font;
             font-size: 40px;
             font-style: normal;
@@ -42,79 +42,95 @@
         }
     }
 
-    .servicesContent {
-        position: relative;
-        padding-bottom: 80px;
-        .mainContent {
-            display: flex;
-            gap: 90px;
-            margin-top: 37px;
+    .servicesBackground {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-image: url("../../assets/images/WhyAmity/whyAmityBackground.png");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // @media (max-width: 1800px) {
+        //     background-size: 100% 100%;
+        // }
+        .servicesContent {
             position: relative;
+            padding-bottom: 80px;
 
-            >.title {
-                font-family: $second-font;
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 100%;
-                margin-bottom: 10px;
-            }
-
-            >.services {
+            .mainContent {
                 display: flex;
-                margin-top: 7px;
-                gap: 89px;
+                gap: 90px;
+                margin-top: 37px;
+                position: relative;
 
-                .serviceBlock {
-                    width: 208px;
+                >.title {
+                    font-family: $second-font;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 100%;
+                    margin-bottom: 10px;
+                }
 
-                    >.title {
-                        font-size: 20px;
-                        font-weight: 600;
-                        line-height: 144%;
-                        margin-bottom: 20px;
-                    }
+                >.services {
+                    display: flex;
+                    margin-top: 7px;
+                    gap: 89px;
 
-                    .description {
-                        font-size: 20px;
-                        font-weight: 400;
-                        line-height: 144%;
+                    .serviceBlock {
+                        width: 208px;
+
+                        >.title {
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 144%;
+                            margin-bottom: 20px;
+                        }
+
+                        .description {
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 144%;
+                        }
                     }
                 }
             }
-        }
 
-        .communication {
-            width: 256px;
-            margin-top: -200px;
-            >.title {
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 144%;
-                margin-bottom: 20px;
-            }
+            .communication {
+                width: 256px;
+                margin-top: -200px;
 
-            .description {
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 144%;
+                >.title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 144%;
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 144%;
+                }
             }
         }
     }
+
 
     >img {
         width: 100%;
         position: absolute;
         bottom: 0%;
     }
-    .whyAmityBackground {
-        background-image: url('../../assets/images/WhyAmity/whyAmityBackground.png');
-        background-position: center center;
-        background-size: initial;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        height: 745px;
-        width: 100%;
-        bottom: 0%;
-    }
+
+    // .whyAmityBackground {
+    //     background-image: url('../../assets/images/WhyAmity/whyAmityBackground.png');
+    //     background-position: center center;
+    //     background-size: initial;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     position: absolute;
+    //     height: 745px;
+    //     width: 100%;
+    //     bottom: 0%;
+    // }
 }

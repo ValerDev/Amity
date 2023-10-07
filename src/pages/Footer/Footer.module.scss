@@ -7,6 +7,11 @@
   .contactInformationContent {
     position: relative;
     padding: 44px 0;
+    width: 100%;
+    background-image: url("../../assets/images/Footer/footerBackground.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     .contactInformation {
       display: flex;
@@ -29,14 +34,10 @@
     }
 
     .line {
-      width: 842px;
+      width: 50%;
       height: 3px;
       background-color: $light-text;
       margin: 47px auto 23px;
-    }
-
-    >img {
-      position: absolute;
     }
 
     .subtitle {
@@ -109,9 +110,11 @@
               line-height: 144%;
             }
           }
+
           .SLBlock {
-              display: flex;
-              gap: 136px;
+            display: flex;
+            gap: 136px;
+
             .solutions {
               >h3 {
                 font-size: 20px;
@@ -119,12 +122,14 @@
                 line-height: 100%;
                 margin-bottom: 20px;
               }
-              .solutionsContent{
+
+              .solutionsContent {
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
-                .subBlock{
-                  
+
+                .subBlock {
+
                   >h4 {
                     font-family: Poppins;
                     font-size: 16px;
@@ -133,7 +138,7 @@
                     line-height: 100%;
                     margin-bottom: 7px;
                   }
-      
+
                   >p {
                     font-size: 16px;
                     font-weight: 400;
@@ -142,19 +147,20 @@
                 }
               }
             }
-  
+
             .loose {
               display: flex;
               flex-direction: column;
               flex-wrap: wrap;
+
               >h3 {
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 100%;
                 margin-bottom: 20px;
               }
-  
-  
+
+
               >p {
                 font-size: 16px;
                 font-weight: 400;
@@ -195,7 +201,6 @@
               font-size: 14px;
               font-style: normal;
               font-weight: 400;
-              line-height: 122%;
             }
           }
         }

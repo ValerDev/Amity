@@ -1,25 +1,11 @@
 .home {
     position: relative;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/images/Home/HomeBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 100%;
-    .homeBackground {
-        background-image: url('../../assets/images/Home/homeBackground.png');
-        background-position: center center;
-        background-size: initial;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 1284px;
-    }
-    .homeBackgroundPuzzle {
-        background-image: url('../../assets/images/Home/backgroundPuzzle.png');
-        background-position: center center;
-        background-size: initial;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        width: 100%;
-        height: 1185.66px;
-        top: 60%;
-    }
+    height: 1660px;
 }
