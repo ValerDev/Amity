@@ -4,14 +4,16 @@ import s from "./WhyAmity.module.scss";
 export const WhyAmity = ({ whyAmityRef }) => {
   return (
     <div className={s.whyAmity} ref={whyAmityRef}>
-      <h3 className={s.heading}>ABOUT US</h3>
-      <div className={s.descriptionBlock}>
-        <h4 className={s.subTitle}>AMITY</h4>
-        <p>
-          Our team consists of experienced logistic specialists and lovely
-          support representatives who are ready to wipe up your daily stress and
-          fill your day with peace of mind.
-        </p>
+      <div>
+        <h3 className={s.heading}>ABOUT US</h3>
+        <div className={s.descriptionBlock}>
+          <h4 className={s.subTitle}>AMITY</h4>
+          <p>
+            Our team consists of experienced logistic specialists and lovely
+            support representatives who are ready to wipe up your daily stress and
+            fill your day with peace of mind.
+          </p>
+        </div>
       </div>
       <div className={s.servicesBackground}>
         <div className={s.servicesContent}>
