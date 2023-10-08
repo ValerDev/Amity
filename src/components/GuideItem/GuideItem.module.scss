@@ -6,13 +6,15 @@
     justify-content: center;
     align-items: center;
     width: 325px;
+
     @media (max-width: 1050px) {
         align-items: center;
         width: unset;
         flex-direction: row;
         gap: 40px;
     }
-    .imageBlock{
+
+    .imageBlock {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,13 +22,16 @@
         width: 142px;
         height: 149px;
         overflow: hidden;
+
         @media (max-width: 1050px) {
             width: 120px;
             height: unset;
         }
+
         @media (max-width: 525px) {
             width: 70px;
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -34,11 +39,12 @@
             top: 0;
             left: 0;
             transition: .3s;
+
             @media (max-width: 1050px) {
                 position: unset;
             }
         }
-     
+
         .imageHover {
             width: 96%;
             height: 143px;
@@ -51,10 +57,16 @@
             border-radius: 19px;
             background: linear-gradient(transparent, $base-color-light);
             border-top: 4px solid #adadade0;
+
             @media (max-width: 1050px) {
-                display: none;
+                border-top: 2px solid #adadade0;
+                border-radius: 10px;
+                left: -2px;
+                height: 96%;
+                width: 97%;
             }
         }
+
         &:hover {
             .imageHover {
                 opacity: 1;
@@ -62,40 +74,48 @@
             }
         }
     }
-    .descriptionBlock{
+
+    .descriptionBlock {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         @media (max-width: 1050px) {
             width: 280px;
         }
+
         @media (max-width: 525px) {
             width: 200px;
         }
+
         h4 {
             margin-top: 28px;
             margin-bottom: 48px;
             font-family: Agency FB;
             font-size: 40px;
             font-weight: 700;
+
             @media (max-width: 1050px) {
                 font-size: 30px;
                 margin-top: unset;
                 margin-bottom: 5px;
             }
+
             @media (max-width: 525px) {
                 font-size: 22px;
             }
         }
-    
+
         p {
             color: $light-text;
             font-size: 24px;
             font-weight: 400;
             text-align: center;
+
             @media (max-width: 1050px) {
                 font-size: 16px;
             }
+
             @media (max-width: 525px) {
                 font-size: 11px;
             }

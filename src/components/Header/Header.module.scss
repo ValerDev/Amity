@@ -25,6 +25,7 @@
         @media (max-width: 525px) {
             width: 30px;    
             right: 10px;
+            top: 50px;
         }
         &:hover {
             opacity: .7;
@@ -118,7 +119,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px 17px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
     .logoBlock {
         display: flex;
         align-items: center;
