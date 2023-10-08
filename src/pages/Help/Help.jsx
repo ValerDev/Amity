@@ -3,8 +3,8 @@ import s from './Help.module.scss';
 import { helpItems } from "./data";
 import helpBackground from '../../assets/images/Help/helpBackground.png'
 
-export const Help = () => {
-    return <div className={s.help}>
+export const Help = ({ helpRef }) => {
+    return <div className={s.help} ref={helpRef}>
         <img src={helpBackground} alt="helpBackground" className={s.helpBackground} />
         <div className={s.helpContent}>
             {helpItems.map(item => <div className={s.helpTitle} key={item.title}>

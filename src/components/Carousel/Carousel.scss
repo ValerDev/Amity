@@ -3,9 +3,11 @@
 .carousel {
     .slideBlock {
         position: relative;
-
+        
         img {
             width: 100%;
+            min-height: 200px;
+            object-fit: cover;
         }
 
         .content {
@@ -25,6 +27,16 @@
                 font-size: 40px;
                 font-weight: 700;
                 line-height: 144%;
+
+                @media (max-width: 1200px) {
+                    font-size: 35px;
+                }
+                 @media (max-width: 1000px) {
+                    font-size: 30px;
+                }
+                @media (max-width: 670px) {
+                    font-size: 20px;
+                }
             }
 
             .description {
@@ -33,19 +45,43 @@
                 font-weight: 400;
                 line-height: 190%;
                 text-align: center;
+
+                @media (max-width: 1200px) {
+                    font-size: 20px;
+                }
+                 @media (max-width: 1000px) {
+                    font-size: 16px;
+                }
+                @media (max-width: 800px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 670px) {
+                    font-size: 10px;
+                }
             }
         }
     }
 
     .carousel-arrow.block.carousel-prev {
+        
         &:before {
             content: '';
             width: 37px;
             height: 78px;
             background-image: url('../../assets/images/Footer/sliderArrowLeft.png');
             transform: translateX(233px);
+            @media (max-width: 1200px) {
+                width: 30px;
+                height: 65px;
+                transform: translateX(10%);
+            }
+            @media (max-width: 670px) {
+                width: 8px;
+                height: 16px;
+            }
         }
     }
+
     .carousel-arrow.block.carousel-next {
         &:before {
             content: '';
@@ -53,6 +89,15 @@
             height: 78px;
             background-image: url('../../assets/images/Footer/sliderArrowRight.png');
             transform: translateX(-233px);
+            @media (max-width: 1200px) {
+                width: 30px;
+                height: 65px;
+                transform: translateX(-10%);
+            }
+            @media (max-width: 670px) {
+                width: 8px;
+                height: 16px;
+            }
         }
     }
 }

@@ -2,32 +2,67 @@
 
 .footer {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 60px;
+
+  @media (max-width: 736px) {
+    margin-top: unset;
+  }
 
   .contactInformationContent {
     position: relative;
     padding: 44px 0;
     width: 100%;
     background-image: url("../../assets/images/Footer/footerBackground.png");
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-
     .contactInformation {
       display: flex;
       justify-content: center;
       gap: 111px;
+
+      @media (max-width: 1050px) {
+        flex-direction: column;
+        gap: 20px;
+      }
 
       .infoBlock {
         display: flex;
         align-items: flex-end;
         gap: 22px;
 
+        @media (max-width: 1050px) {
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media (max-width: 525px) {
+          gap: 6px;
+        }
+
+        img {
+          @media (max-width: 670px) {
+            width: 35px;
+          }
+
+          @media (max-width: 525px) {
+            width: 20px;
+          }
+        }
+
         p {
           text-align: center;
           font-size: 26px;
           font-weight: 400;
           line-height: 120%;
+
+          @media (max-width: 670px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 525px) {
+            font-size: 13px;
+          }
         }
       }
 
@@ -47,6 +82,10 @@
         font-size: 54px;
         font-weight: 700;
         line-height: 137.5%;
+
+        @media (max-width: 525px) {
+          font-size: 25px;
+        }
       }
 
       >h3 {
@@ -55,6 +94,10 @@
         font-size: 54px;
         font-weight: 400;
         line-height: 137.5%;
+
+        @media (max-width: 525px) {
+          font-size: 25px;
+        }
       }
     }
   }
@@ -73,14 +116,28 @@
       margin: 0 auto;
       width: 80%;
 
+      @media (max-width: 550px) {
+        width: 90%;
+      }
+
       .footerBlock1 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
+        @media (max-width: 1050px) {
+          gap: 25px;
+        }
+
         .imgBlock {
           >img {
             margin-top: 52px;
+
+            @media (max-width: 550px) {
+              margin-top: 17px;
+
+              width: 52px;
+            }
           }
         }
 
@@ -91,15 +148,33 @@
           justify-content: space-between;
           color: $white;
 
+          @media (max-width: 550px) {
+            flex-direction: column-reverse;
+          }
+
           .aboutUsBlock {
             width: 332px;
             margin-top: 48px;
+            margin-right: 40px;
+
+            @media (max-width: 1050px) {
+              margin-top: -5px;
+            }
+
+            @media (max-width: 550px) {
+              width: unset;
+
+            }
 
             .title {
               color: $white;
               font-size: 24px;
               font-weight: 500;
               line-height: normal;
+
+              @media (max-width: 550px) {
+                font-size: 12px;
+              }
             }
 
             .description {
@@ -108,6 +183,10 @@
               font-style: normal;
               font-weight: 400;
               line-height: 144%;
+
+              @media (max-width: 550px) {
+                font-size: 7px;
+              }
             }
           }
 
@@ -115,18 +194,30 @@
             display: flex;
             gap: 136px;
 
+            @media (max-width: 550px) {
+              gap: 0px;
+            }
+
             .solutions {
               >h3 {
                 font-size: 20px;
                 font-weight: 700;
                 line-height: 100%;
                 margin-bottom: 20px;
+
+                @media (max-width: 550px) {
+                  font-size: 10px;
+                }
               }
 
               .solutionsContent {
                 display: flex;
                 flex-direction: column;
                 gap: 12px;
+
+                @media (max-width: 550px) {
+                  flex-direction: row;
+                }
 
                 .subBlock {
 
@@ -137,12 +228,24 @@
                     font-weight: 700;
                     line-height: 100%;
                     margin-bottom: 7px;
+
+                    @media (max-width: 550px) {
+                      margin-bottom: 9px;
+                      margin-right: 18px;
+                      font-size: 8px;
+                    }
                   }
 
                   >p {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 160%;
+
+                    @media (max-width: 550px) {
+                      margin-bottom: 9px;
+                      margin-right: 18px;
+                      font-size: 8px;
+                    }
                   }
                 }
               }
@@ -158,13 +261,32 @@
                 font-weight: 700;
                 line-height: 100%;
                 margin-bottom: 20px;
+
+                @media (max-width: 550px) {
+                  font-size: 10px;
+                }
               }
 
+              .looseContent {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
 
-              >p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 160%;
+                @media (max-width: 550px) {
+                  height: 80px;
+                }
+
+                >p {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 160%;
+
+                  @media (max-width: 550px) {
+                    margin-bottom: 9px;
+                    margin-right: 18px;
+                    font-size: 8px;
+                  }
+                }
               }
             }
           }
@@ -185,6 +307,12 @@
           .messages {
             display: flex;
             justify-content: flex-end;
+
+            img {
+              @media (max-width: 550px) {
+                width: 32px;
+              }
+            }
           }
 
           .LSBlock {
@@ -195,12 +323,26 @@
               display: flex;
               align-items: center;
               gap: 28px;
+
+              @media (max-width: 550px) {
+                gap: 24px;
+              }
+
+              img {
+                @media (max-width: 550px) {
+                  width: 19px;
+                }
+              }
             }
 
             .license {
               font-size: 14px;
               font-style: normal;
               font-weight: 400;
+
+              @media (max-width: 550px) {
+                font-size: 7px;
+              }
             }
           }
         }

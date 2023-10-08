@@ -3,48 +3,64 @@ import s from './Header.module.scss';
 import logo from '../../assets/images/logo.svg';
 import logoWhite from '../../assets/images/logoWhite.svg';
 import email from '../../assets/images/Home/email.svg';
-
-export const Header = () => {
+import goToHomeIcon from '../../assets/images/Home/goToHomeIcon.svg';
+export const Header = ({
+  homeRef,
+  guideRef,
+  helpRef,
+  weTransportRef,
+  whyAmityRef
+}) => {
   const [windowWidth, setWindowWidth] = useState(getWindowSize());
+  const [windowScrollPosition, setWindowScrollPosition] = useState(0);
 
   useEffect(() => {
-    function handleWindowResize() {
+    const handleWindowResize = () => {
       setWindowWidth(getWindowSize());
+    }
+    const handleScroolPosition = () => {
+      setWindowScrollPosition(window.pageYOffset);
     }
 
     window.addEventListener('resize', handleWindowResize);
+    window.addEventListener('scroll', handleScroolPosition);
 
     return () => {
       window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener('scroll', handleScroolPosition);
     };
   }, []);
 
+  const goToElement = (ref) => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+  }
 
   return (
     <div className={s.header}>
+      {windowScrollPosition >= 1000 ? <img className={s.goToHomeIcon} src={goToHomeIcon} alt='goToHomeIcon' onClick={() => goToElement(homeRef)}/> : null}
       {windowWidth > 1050 ? <div className={s.navBar}>
-        <button className={s.link}>GUIDE</button>
-        <button className={s.link}>WE TRANSPORT</button>
+        <button onClick={() => goToElement(guideRef)} className={s.link}>GUIDE</button>
+        <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
         <img src={logo} alt="Logo" />
-        <button className={s.link}>WHY AMITY</button>
-        <button className={s.link}>HELP</button>
+        <button onClick={() => goToElement(whyAmityRef)} className={s.link}>WHY AMITY</button>
+        <button onClick={() => goToElement(weTransportRef)} className={s.link}>HELP</button>
       </div> :
         <div className={s.mobileHeader}>
           <div className={s.logoBlock}>
-            <img src={logoWhite} alt="logoWhite" className={s.logoWhite}/>
+            <img src={logoWhite} alt="logoWhite" className={s.logoWhite} />
             <div className={s.line} />
-            <img src={email} alt="email" className={s.emailIcon}/>
+            <img src={email} alt="email" className={s.emailIcon} />
           </div>
           <div className={s.linksBlock}>
-            <button className={s.link}>GUIDE</button>
-            <button className={s.link}>WE TRANSPORT</button>
-            <button className={s.link}>WHY AMITY</button>
-            <button className={s.link}>HELP</button>
+            <button onClick={() => goToElement(guideRef)} className={s.link}>GUIDE</button>
+            <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
+            <button onClick={() => goToElement(whyAmityRef)} className={s.link}>WHY AMITY</button>
+            <button onClick={() => goToElement(weTransportRef)} className={s.link}>HELP</button>
           </div>
         </div>}
 
       <h2 className={s.title}>REDEFINING MOBILITY</h2>
-      <button className={s.getAnInstantQuotieBtn}>
+      <button className={s.getAnInstantQuotieBtn} onClick={() => goToElement(weTransportRef)}>
         GET AN INSTANT QUOTE
       </button>
     </div>

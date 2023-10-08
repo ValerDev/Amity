@@ -17,7 +17,9 @@
         align-items: center;
         flex-direction: column;
         gap: 20px;
-
+        @media (max-width: 525px) {
+            gap: 0;
+        }
         .whatYouNeedBlock {
             display: flex;
             flex-direction: column;
@@ -73,10 +75,17 @@
             display: flex;
             align-items: flex-start;
             justify-content: center;
+            padding: 50px 0 59px;
             gap: 39px;
 
             @media (max-width: 1050px) {
+                width: 100%;
+                align-items: center;
                 flex-direction: column;
+                background-image: url('../../assets/images/Guide/guideItemsBackground.png');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -85,14 +94,13 @@
         margin-right: auto;
 
         @media (max-width: 1050px) {
-            margin-left: auto;
-            margin-right: 0;
-            width: 124px;
+           display: none;
         }
     }
 
     .homeIcon {
         display: none;
+
         @media (max-width: 1050px) {
             display: block;
             position: absolute;

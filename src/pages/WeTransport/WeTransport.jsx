@@ -5,8 +5,8 @@ import arrow1 from '../../assets/images/WeTransport/arrow1.png'
 import arrow2 from '../../assets/images/WeTransport/arrow2.png'
 import arrow3 from '../../assets/images/WeTransport/arrow3.png'
 
-export const WeTransport = () => {
-    return <div className={s.weTransport}>
+export const WeTransport = ({ weTransportRef }) => {
+    return <div className={s.weTransport} ref={weTransportRef}>
         <VehicleTransportCalculator />
         <div className={s.howDoIt}>
             <div>

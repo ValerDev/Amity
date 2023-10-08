@@ -7,28 +7,35 @@
     margin-top: -8px;
     gap: 71px;
 
-    
+
     .mainContent {
         display: flex;
         gap: 213px;
-        
+
 
         @media (max-width: 1050px) {
             width: 100%;
             flex-direction: column;
             gap: 57px;
+            background-image: url('../../assets/images/Guide/calculatorBackground.png');
+            background-position: center -140px;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
-        @media (max-width: 525px) {
-        }
+
 
         .form {
             display: flex;
             flex-direction: column;
             gap: 41px;
             margin-top: 30px;
+
             @media (max-width: 1050px) {
                 align-items: center;
+            }
+            @media (max-width: 525px) {
+                gap: 14px;
             }
             h2 {
                 font-family: $second-font;
@@ -37,8 +44,9 @@
                 line-height: 100%;
                 text-transform: uppercase;
                 white-space: nowrap;
+
                 @media (max-width: 525px) {
-                    font-size: 30px;
+                    font-size: 22px;
                 }
             }
 
@@ -46,7 +54,9 @@
                 display: flex;
                 flex-direction: column;
                 gap: 25px;
-
+                @media (max-width: 525px) {
+                    gap: 14px;
+                }
                 input[type=text] {
                     font-size: 20px;
                     font-weight: 400;
@@ -59,19 +69,30 @@
                     border: 1px solid #FF5408;
                     box-shadow: 0px 0px 15px 0px rgba(142, 142, 142, 0.30) inset;
                     outline: none;
+                    @media (max-width: 525px) {
+                        font-size: 11px;
+                        width: 296px;
+                        padding: 5.5px 52px;
+                        border-radius: 5px;
+                    }
                 }
 
                 p {
                     font-size: 24px;
                     font-weight: 400;
-                    line-height: 100%
+                    line-height: 100%;
+                    @media (max-width: 525px) {
+                        font-size: 12px;
+                    }
                 }
             }
-            .radioBlock{
+
+            .radioBlock {
                 @media (max-width: 1050px) {
                     align-items: center;
                 }
             }
+
             .radioInputContent {
                 display: flex;
                 gap: 42px;
@@ -84,7 +105,10 @@
                     p {
                         font-size: 24px;
                         font-weight: 400;
-                        line-height: 100%
+                        line-height: 100%;
+                        @media (max-width: 525px) {
+                           font-size: 12px;
+                        }
                     }
 
                     .customRadio {
@@ -93,15 +117,25 @@
                         align-items: center;
                         width: 24px;
                         height: 24px;
-                        border: 6px solid $base-color;
+                        border: 4px solid $base-color;
                         border-radius: 50%;
+                        @media (max-width: 525px) {
+                            width: 21px;
+                            height: 21px;
+                            border: 3px solid $base-color;
 
+                        }
                         input[type=radio] {
                             appearance: none;
-                            width: 10.5px;
-                            height: 10.5px;
+                            width: 12px;
+                            height: 12px;
                             accent-color: $base-color;
                             border-radius: 50%;
+                            @media (max-width: 525px) {
+                                width: 11px;
+                                height: 11px;
+    
+                            }
                         }
 
                         input[type=radio]:checked {
@@ -124,36 +158,42 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        
+
         @media (max-width: 1050px) {
             width: 100%;
             height: 250px;
         }
+
         @media (max-width: 525px) {
             width: 100%;
             height: 138px;
         }
-       
+
 
         .content {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
             @media (max-width: 1050px) {
                 width: 80%;
             }
+
             @media (max-width: 525px) {
                 width: 306px;
             }
+
             .description {
                 font-size: 24px;
                 font-weight: 400;
                 line-height: 130%;
                 letter-spacing: 1.2px;
+
                 @media (max-width: 1050px) {
                     font-size: 20px;
                 }
+
                 @media (max-width: 525px) {
                     font-size: 12px;
                     font-style: normal;
@@ -168,9 +208,11 @@
                 font-weight: 600;
                 line-height: 175%;
                 white-space: nowrap;
+
                 @media (max-width: 1050px) {
                     font-size: 23px;
                 }
+
                 @media (max-width: 525px) {
                     font-size: 16px;
                     font-style: normal;
@@ -186,9 +228,11 @@
                 font-weight: 600;
                 line-height: 175%;
                 white-space: nowrap;
+
                 @media (max-width: 1050px) {
                     font-size: 23px;
                 }
+
                 @media (max-width: 525px) {
                     font-size: 16px;
                     font-size: 16px;
@@ -216,8 +260,6 @@
             align-items: center;
             width: 209px;
             height: 58px;
-            justify-content: center;
-            align-items: center;
             gap: 10px;
             font-size: 24px;
             font-weight: 400;
@@ -225,10 +267,18 @@
             letter-spacing: 1.2px;
             cursor: pointer;
             transition: .3s;
-
             &:hover {
                 box-shadow: 0px 0px 15px 2px #FF540877, inset 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
             }
+        }
+        @media (max-width: 525px) {
+            width: 90px;
+            height: 25px;
+            border-radius: 5px;
+            font-size: 12px;
+            letter-spacing: 0.6px;
+            margin-top: 12px;
+            margin-bottom: 7px;
         }
     }
 
@@ -243,8 +293,6 @@
         align-items: center;
         width: 209px;
         height: 58px;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
         font-size: 24px;
         font-weight: 400;
@@ -256,8 +304,9 @@
         &:hover {
             box-shadow: 0px 0px 15px 2px #FF540877, inset 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
         }
+
         @media (max-width: 1050px) {
-        display: none;
+            display: none;
         }
     }
 }

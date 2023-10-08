@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./WhyAmity.module.scss";
 
-export const WhyAmity = () => {
+export const WhyAmity = ({ whyAmityRef }) => {
   return (
-    <div className={s.whyAmity}>
+    <div className={s.whyAmity} ref={whyAmityRef}>
       <h3 className={s.heading}>ABOUT US</h3>
       <div className={s.descriptionBlock}>
         <h4 className={s.subTitle}>AMITY</h4>

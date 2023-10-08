@@ -59,11 +59,13 @@ export const Footer = () => {
                             </div>
                             <div className={s.loose}>
                                 <h3>Loose</h3>
-                                <p>Privacy Policy</p>
-                                <p>Terms and Conditions</p>
-                                <p>Cookie policy</p>
-                                <p>Copyright</p>
-                                <p>Terms of Use</p>
+                                <div className={s.looseContent}>
+                                    <p>Privacy Policy</p>
+                                    <p>Terms and Conditions</p>
+                                    <p>Cookie policy</p>
+                                    <p>Copyright</p>
+                                    <p>Terms of Use</p>
+                                </div>
                             </div>
                         </div>
                     </div>
