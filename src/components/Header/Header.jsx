@@ -39,10 +39,10 @@ export const Header = ({
     <div className={s.header}>
       {windowScrollPosition >= 1000 ? <img className={s.goToHomeIcon} src={goToHomeIcon} alt='goToHomeIcon' onClick={() => goToElement(homeRef)}/> : null}
       {windowWidth > 1050 ? <div className={s.navBar}>
-        <button onClick={() => goToElement(guideRef)} className={s.link}>GUIDE</button>
+        <button onClick={() => goToElement(guideRef)} className={s.link}>WHY AMITY</button>
         <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
         <img src={logo} alt="Logo" />
-        <button onClick={() => goToElement(whyAmityRef)} className={s.link}>WHY AMITY</button>
+        <button onClick={() => goToElement(whyAmityRef)} className={s.link}>GUIDE</button>
         <button onClick={() => goToElement(weTransportRef)} className={s.link}>HELP</button>
       </div> :
         <div className={s.mobileHeader}>
@@ -52,9 +52,9 @@ export const Header = ({
             <img src={email} alt="email" className={s.emailIcon} />
           </div>
           <div className={s.linksBlock}>
-            <button onClick={() => goToElement(guideRef)} className={s.link}>GUIDE</button>
+            <button onClick={() => goToElement(guideRef)} className={s.link}>WHY AMITY</button>
             <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
-            <button onClick={() => goToElement(whyAmityRef)} className={s.link}>WHY AMITY</button>
+            <button onClick={() => goToElement(whyAmityRef)} className={s.link}>GUIDE</button>
             <button onClick={() => goToElement(weTransportRef)} className={s.link}>HELP</button>
           </div>
         </div>}

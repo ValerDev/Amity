@@ -90,14 +90,14 @@
         background-image: url("../../assets/images/WhyAmity/whyAmityBackground.png");
         background-position: center bottom;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: inherit;
         @media (max-width: 1050px) {
-            background-size: contain;
+            background-size: inherit;
             background-image: url("../../assets/images/WhyAmity/whyAmityBackgroundMobile.svg");
             margin: 20px 0;
         }
         @media (max-width: 736px) {
-            background-size: contain;
+            background-size: inherit;
             margin: 20px 0;
             background-size: 98% 115%;
             background-position: -10px -65px;
