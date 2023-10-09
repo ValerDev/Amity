@@ -32,18 +32,18 @@ export const Header = ({
   }, []);
 
   const goToElement = (ref) => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
     <div className={s.header}>
-      {windowScrollPosition >= 1000 ? <img className={s.goToHomeIcon} src={goToHomeIcon} alt='goToHomeIcon' onClick={() => goToElement(homeRef)}/> : null}
+      {windowScrollPosition >= 1000 ? <img className={s.goToHomeIcon} src={goToHomeIcon} alt='goToHomeIcon' onClick={() => goToElement(homeRef)} /> : null}
       {windowWidth > 1050 ? <div className={s.navBar}>
-        <button onClick={() => goToElement(guideRef)} className={s.link}>WHY AMITY</button>
-        <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
+          <button onClick={() => goToElement(guideRef)} className={s.link}>WHY AMITY</button>
+          <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
         <img src={logo} alt="Logo" />
-        <button onClick={() => goToElement(whyAmityRef)} className={s.link}>GUIDE</button>
-        <button onClick={() => goToElement(weTransportRef)} className={s.link}>HELP</button>
+          <button onClick={() => goToElement(whyAmityRef)} className={`${s.link}`}>GUIDE</button>
+          <button onClick={() => goToElement(weTransportRef)} className={`${s.link}`}>HELP</button>
       </div> :
         <div className={s.mobileHeader}>
           <div className={s.logoBlock}>
@@ -60,7 +60,7 @@ export const Header = ({
         </div>}
 
       <h2 className={s.title}>REDEFINING MOBILITY</h2>
-      <button className={s.getAnInstantQuotieBtn} onClick={() => goToElement(weTransportRef)}>
+      <button className={s.getAnInstantQuotieBtn} onClick={() => goToElement(helpRef)}>
         GET AN INSTANT QUOTE
       </button>
     </div>

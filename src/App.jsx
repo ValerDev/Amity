@@ -19,9 +19,9 @@ function App() {
       <Home homeRef={homeRef} guideRef={guideRef} helpRef={helpRef} weTransportRef={weTransportRef} whyAmityRef={whyAmityRef} />
       <Guide guideRef={guideRef} />
       <Help helpRef={helpRef} />
-      <WeTransport weTransportRef={weTransportRef} />
+      <WeTransport/>
       <WhyAmity whyAmityRef={whyAmityRef} />
-      <Footer />
+      <Footer weTransportRef={weTransportRef}/>
     </div>
   );
 }

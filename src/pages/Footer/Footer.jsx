@@ -9,7 +9,7 @@ import message from '../../assets/images/Footer/message.png';
 import youtube from '../../assets/images/Footer/youtube.png';
 import instagram from '../../assets/images/Footer/instagram.png';
 
-export const Footer = () => {
+export const Footer = ({ weTransportRef }) => {
     return <div className={s.footer}>
         <Carousel />
         <div className={s.contactInformationContent}>
@@ -29,7 +29,7 @@ export const Footer = () => {
                 <h2>YOUR AMITY.</h2>
             </div>
         </div>
-        <div className={s.mainFooter}>
+        <div className={s.mainFooter} ref={weTransportRef}>
             <div className={s.footerContent}>
                 <div className={s.footerBlock1}>
                     <div className={s.imgBlock}>

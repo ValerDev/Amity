@@ -38,10 +38,9 @@ export const VehicleTransportCalculator = () => {
                 <div className={s.content}>
                     <p className={s.description}>provide us a little bit of information about your order</p>
                     <p className={s.orCall}>or call us at</p>
-                    <p className={s.callNumber}>(305) 433-3319</p>
+                    <p className={s.callNumber}>(305) 433-3445</p>
                 </div>
             </div>
-
         </div>
         <button className={s.confirm}>CONFIRM</button>
 
