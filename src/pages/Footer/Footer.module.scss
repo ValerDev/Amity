@@ -3,19 +3,18 @@
 .footer {
   width: 100%;
   margin-top: 60px;
-
   @media (max-width: 736px) {
     margin-top: unset;
   }
 
   .contactInformationContent {
     position: relative;
-    padding: 44px 0;
     width: 100%;
     background-image: url("../../assets/images/Footer/footerBackground.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-bottom: 44px;
 
     @media (max-width: 1600px) {
       transform: scale(0.85);
@@ -117,6 +116,7 @@
     position: relative;
     width: 100%;
     background-color: $base-color;
+    padding-bottom: 44px;
 
     @media (max-width: 1600px) {
       height: 481px;
@@ -125,7 +125,9 @@
     @media (max-width: 1050px) {
       height: unset;
     }
-
+    @media (max-width: 525px) {
+      padding-bottom: 20px;
+    }
     .footerContent {
       display: flex;
       flex-direction: column;
@@ -136,7 +138,7 @@
 
       @media (max-width: 1600px) {
         width: 100%;
-        transform: scale(0.85);
+        transform: scale(0.85) translateY(-20px);
       }
 
       @media (max-width: 1050px) {
@@ -233,7 +235,8 @@
             }
 
             @media (max-width: 550px) {
-              gap: 0px;
+              justify-content: unset;
+              gap: 10px;
             }
 
             .solutions {

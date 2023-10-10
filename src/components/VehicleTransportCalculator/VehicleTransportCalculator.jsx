@@ -1,8 +1,8 @@
 import React from "react";
 import s from './VehicleTransportCalculator.module.scss'
 
-export const VehicleTransportCalculator = () => {
-    return <div className={s.vehicleTransportCalculator}>
+export const VehicleTransportCalculator = ({redefiningMobilityRef}) => {
+    return <div className={s.vehicleTransportCalculator} ref={redefiningMobilityRef}>
         <div className={s.mainContent}>
             <div className={s.form}>
                 <h2>vehicle transport calculator</h2>

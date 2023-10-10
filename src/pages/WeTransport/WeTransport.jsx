@@ -5,9 +5,9 @@ import arrow1 from '../../assets/images/WeTransport/arrow1.png'
 import arrow2 from '../../assets/images/WeTransport/arrow2.png'
 import arrow3 from '../../assets/images/WeTransport/arrow3.png'
 
-export const WeTransport = () => {
+export const WeTransport = ({redefiningMobilityRef}) => {
     return <div className={s.weTransport} >
-        <VehicleTransportCalculator />
+        <VehicleTransportCalculator redefiningMobilityRef={redefiningMobilityRef} />
         <div className={s.howDoIt}>
             <div>
                 <h3>HOW TO DO IT</h3>
@@ -24,7 +24,8 @@ export const WeTransport = () => {
             <p>3. RELAX</p>
         </div>
         <div className={s.comingSoon}> 
-            COMING SOON
+            <h2>COMING SOON</h2>
+            <p>To get an instant quote please call (305) 433-3445.</p>
         </div>
     </div>
 }

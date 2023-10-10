@@ -13,13 +13,13 @@ function App() {
   const helpRef = useRef(null);
   const weTransportRef = useRef(null);
   const whyAmityRef = useRef(null);
-
+  const redefiningMobilityRef = useRef(null);
   return (
     <div className={s.App}>
-      <Home homeRef={homeRef} guideRef={guideRef} helpRef={helpRef} weTransportRef={weTransportRef} whyAmityRef={whyAmityRef} />
+      <Home homeRef={homeRef} guideRef={guideRef} helpRef={helpRef} weTransportRef={weTransportRef} whyAmityRef={whyAmityRef} redefiningMobilityRef={redefiningMobilityRef} />
       <Guide guideRef={guideRef} />
       <Help helpRef={helpRef} />
-      <WeTransport/>
+      <WeTransport redefiningMobilityRef={redefiningMobilityRef}/>
       <WhyAmity whyAmityRef={whyAmityRef} />
       <Footer weTransportRef={weTransportRef}/>
     </div>

@@ -9,7 +9,8 @@ export const Header = ({
   guideRef,
   helpRef,
   weTransportRef,
-  whyAmityRef
+  whyAmityRef,
+  redefiningMobilityRef
 }) => {
   const [windowWidth, setWindowWidth] = useState(getWindowSize());
   const [windowScrollPosition, setWindowScrollPosition] = useState(0);
@@ -41,7 +42,7 @@ export const Header = ({
       {windowWidth > 1050 ? <div className={s.navBar}>
           <button onClick={() => goToElement(guideRef)} className={s.link}>WHY AMITY</button>
           <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className={s.logo}/>
           <button onClick={() => goToElement(whyAmityRef)} className={`${s.link}`}>GUIDE</button>
           <button onClick={() => goToElement(weTransportRef)} className={`${s.link}`}>HELP</button>
       </div> :
@@ -52,15 +53,15 @@ export const Header = ({
             <img src={email} alt="email" className={s.emailIcon} />
           </div>
           <div className={s.linksBlock}>
-            <button onClick={() => goToElement(guideRef)} className={s.link}>WHY AMITY</button>
-            <button onClick={() => goToElement(helpRef)} className={s.link}>WE TRANSPORT</button>
-            <button onClick={() => goToElement(whyAmityRef)} className={s.link}>GUIDE</button>
-            <button onClick={() => goToElement(weTransportRef)} className={s.link}>HELP</button>
+            <button onClick={() => goToElement(guideRef)} className={`${s.link} ${s.mobileLink}`}>WHY AMITY</button>
+            <button onClick={() => goToElement(helpRef)} className={`${s.link} ${s.mobileLink}`}>WE TRANSPORT</button>
+            <button onClick={() => goToElement(whyAmityRef)} className={`${s.link} ${s.mobileLink}`}>GUIDE</button>
+            <button onClick={() => goToElement(weTransportRef)} className={`${s.link} ${s.mobileLink}`}>HELP</button>
           </div>
         </div>}
 
       <h2 className={s.title}>REDEFINING MOBILITY</h2>
-      <button className={s.getAnInstantQuotieBtn} onClick={() => goToElement(helpRef)}>
+      <button className={s.getAnInstantQuotieBtn} onClick={() => goToElement(redefiningMobilityRef)}>
         GET AN INSTANT QUOTE
       </button>
     </div>

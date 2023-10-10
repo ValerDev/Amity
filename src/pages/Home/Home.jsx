@@ -6,9 +6,10 @@ export const Home = ({
     guideRef,
     helpRef,
     weTransportRef,
-    whyAmityRef
+    whyAmityRef,
+    redefiningMobilityRef
 }) => {
     return <div className={s.home} ref={homeRef}>
-        <Header homeRef={homeRef} guideRef={guideRef} helpRef={helpRef} weTransportRef={weTransportRef} whyAmityRef={whyAmityRef} />
+        <Header homeRef={homeRef} guideRef={guideRef} helpRef={helpRef} weTransportRef={weTransportRef} whyAmityRef={whyAmityRef} redefiningMobilityRef={redefiningMobilityRef}/>
     </div>
 }
