@@ -180,6 +180,9 @@
     @media (max-width: 525px) {
         height: 36px;
     }
+    @media (max-width: 375px) {
+        padding: 8px 10px;
+    }
     .logoBlock {
         display: flex;
         align-items: center;
@@ -214,6 +217,10 @@
     .linksBlock {
         display: flex;
         gap: 24px;
+        
+        @media (max-width: 375px) {
+            gap: 10px;
+        }
 
         .link {
             white-space: nowrap;
