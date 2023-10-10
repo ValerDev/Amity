@@ -16,6 +16,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (max-width: 1600px) {
+      transform: scale(0.85);
+      padding: 37px 0;
+    }
+
+    @media (max-width: 1050px) {
+      transform: unset;
+    }
+
     .contactInformation {
       display: flex;
       justify-content: center;
@@ -80,7 +90,7 @@
         font-family: $second-font;
         text-align: center;
         font-size: 54px;
-        font-weight: 700;
+        font-weight: bold;
         line-height: 137.5%;
 
         @media (max-width: 525px) {
@@ -92,7 +102,7 @@
         text-align: center;
         font-family: "Agency FB Light";
         font-size: 54px;
-        font-weight: 600;
+        font-weight: bold;
         line-height: 137.5%;
 
         @media (max-width: 525px) {
@@ -108,6 +118,14 @@
     width: 100%;
     background-color: $base-color;
 
+    @media (max-width: 1600px) {
+      height: 481px;
+    }
+
+    @media (max-width: 1050px) {
+      height: unset;
+    }
+
     .footerContent {
       display: flex;
       flex-direction: column;
@@ -116,8 +134,15 @@
       margin: 0 auto;
       width: 80%;
 
-      @media (max-width: 550px) {
+      @media (max-width: 1600px) {
+        width: 100%;
+        transform: scale(0.85);
+      }
+
+      @media (max-width: 1050px) {
+        transform: unset;
         width: 90%;
+
       }
 
       .footerBlock1 {
@@ -135,7 +160,6 @@
 
             @media (max-width: 550px) {
               margin-top: 17px;
-
               width: 52px;
             }
           }
@@ -148,7 +172,7 @@
           justify-content: space-between;
           color: $white;
 
-          @media (max-width: 550px) {
+          @media (max-width: 1050px) {
             flex-direction: column-reverse;
           }
 
@@ -161,7 +185,7 @@
               margin-top: -5px;
             }
 
-            @media (max-width: 550px) {
+            @media (max-width: 1050px) {
               width: unset;
 
             }
@@ -194,9 +218,20 @@
             display: flex;
             gap: 136px;
             margin-right: 14%;
+
             @media (max-width: 1165px) {
               margin-right: unset;
             }
+
+            @media (max-width: 1050px) {
+              justify-content: space-between;
+              gap: 50px;
+            }
+
+            @media (max-width: 670px) {
+              gap: 30px;
+            }
+
             @media (max-width: 550px) {
               gap: 0px;
             }
@@ -204,7 +239,7 @@
             .solutions {
               >h3 {
                 font-size: 20px;
-                font-weight: 700;
+                font-weight: bold;
                 line-height: 100%;
                 margin-bottom: 20px;
 
@@ -218,17 +253,25 @@
                 flex-direction: column;
                 gap: 12px;
 
-                @media (max-width: 550px) {
+                @media (max-width: 1050px) {
                   flex-direction: row;
+                  gap: 50px;
+
                 }
 
+                @media (max-width: 670px) {
+                  gap: 30px;
+                }
+                @media (max-width: 410px) {
+                  gap: 0;
+                }
                 .subBlock {
 
                   >h4 {
                     font-family: Poppins;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: bold;
                     line-height: 100%;
                     margin-bottom: 7px;
 
@@ -236,6 +279,10 @@
                       margin-bottom: 9px;
                       margin-right: 18px;
                       font-size: 8px;
+                    }
+                    @media (max-width: 410px) {
+                      margin-right: 10px;
+
                     }
                   }
 
@@ -261,7 +308,7 @@
 
               >h3 {
                 font-size: 20px;
-                font-weight: 700;
+                font-weight: bold;
                 line-height: 100%;
                 margin-bottom: 20px;
 

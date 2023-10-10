@@ -8,9 +8,16 @@
     width: 100%;
     gap: 60px;
     margin-top: 107px;
-
-    @media (max-width: 1050px) {
+    @media (max-width: 1600px) {
+        transform: scale(0.85);
         margin-top: unset;
+
+    }
+    @media (max-width: 1100px) {
+        transform: scale(0.8) translateY(-80px);
+    }
+    @media (max-width: 1050px) {
+        transform: scale(1);
     }
 
     @media (max-width: 525px) {
@@ -53,8 +60,9 @@
             transition: .3s;
             font-size: 20px;
             outline: none;
+            font-weight: bold;
 
-            &:hover {
+            &:hover {   
                 color: $base-color;
             }
             @media (max-width: 1100px) {
@@ -75,8 +83,23 @@
         margin-top: 177px;
         margin-bottom: 154px;
         letter-spacing: 2.88px;
-
+        font-weight: bold;
+        @media (max-width: 1600px) {
+            margin-top: 110px;
+            margin-bottom: 90px;
+        }
+        @media (max-width: 1400px) {
+            font-size: 85px;
+            margin-top: 90px;
+            margin-bottom: 70px;
+        }
+        @media (max-width: 1200px) {
+            font-size: 80px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
         @media (max-width: 1050px) {
+            margin-top: 177px;
             font-size: 60px;
         }
 

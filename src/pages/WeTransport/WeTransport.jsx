@@ -23,5 +23,8 @@ export const WeTransport = () => {
             </div>
             <p>3. RELAX</p>
         </div>
+        <div className={s.comingSoon}> 
+            COMING SOON
+        </div>
     </div>
 }

@@ -43,6 +43,5 @@ export const VehicleTransportCalculator = () => {
             </div>
         </div>
         <button className={s.confirm}>CONFIRM</button>
-
     </div>
 }

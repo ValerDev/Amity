@@ -7,6 +7,13 @@
     margin-top: -8px;
     gap: 71px;
 
+    @media (max-width: 1600px) {
+        transform: scale(0.85) translateY(-52px);
+    }
+
+    @media (max-width: 1050px) {
+        transform: unset;
+    }
 
     .mainContent {
         display: flex;
@@ -24,7 +31,6 @@
         }
 
 
-
         .form {
             display: flex;
             flex-direction: column;
@@ -34,13 +40,15 @@
             @media (max-width: 1050px) {
                 align-items: center;
             }
+
             @media (max-width: 525px) {
                 gap: 14px;
             }
+
             h2 {
                 font-family: $second-font;
                 font-size: 36px;
-                font-weight: 700;
+                font-weight: bold;
                 line-height: 100%;
                 text-transform: uppercase;
                 white-space: nowrap;
@@ -54,9 +62,11 @@
                 display: flex;
                 flex-direction: column;
                 gap: 25px;
+
                 @media (max-width: 525px) {
                     gap: 14px;
                 }
+
                 input[type=text] {
                     font-size: 20px;
                     font-weight: 400;
@@ -69,6 +79,7 @@
                     border: 1px solid #FF5408;
                     box-shadow: 0px 0px 15px 0px rgba(142, 142, 142, 0.30) inset;
                     outline: none;
+
                     @media (max-width: 525px) {
                         font-size: 11px;
                         width: 296px;
@@ -81,6 +92,7 @@
                     font-size: 24px;
                     font-weight: 400;
                     line-height: 100%;
+
                     @media (max-width: 525px) {
                         font-size: 12px;
                     }
@@ -106,8 +118,9 @@
                         font-size: 24px;
                         font-weight: 400;
                         line-height: 100%;
+
                         @media (max-width: 525px) {
-                           font-size: 12px;
+                            font-size: 12px;
                         }
                     }
 
@@ -119,22 +132,25 @@
                         height: 24px;
                         border: 4px solid $base-color;
                         border-radius: 50%;
+
                         @media (max-width: 525px) {
                             width: 21px;
                             height: 21px;
                             border: 3px solid $base-color;
 
                         }
+
                         input[type=radio] {
                             appearance: none;
                             width: 12px;
                             height: 12px;
                             accent-color: $base-color;
                             border-radius: 50%;
+
                             @media (max-width: 525px) {
                                 width: 11px;
                                 height: 11px;
-    
+
                             }
                         }
 
@@ -205,7 +221,7 @@
             .orCall {
                 color: $white;
                 font-size: 32px;
-                font-weight: 600;
+                font-weight: bold;
                 line-height: 175%;
                 white-space: nowrap;
 
@@ -225,7 +241,7 @@
             .callNumber {
                 color: $white;
                 font-size: 32px;
-                font-weight: 600;
+                font-weight: bold;
                 line-height: 175%;
                 white-space: nowrap;
 
@@ -267,10 +283,12 @@
             letter-spacing: 1.2px;
             cursor: pointer;
             transition: .3s;
+
             &:hover {
                 box-shadow: 0px 0px 15px 2px #FF540877, inset 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
             }
         }
+
         @media (max-width: 525px) {
             width: 90px;
             height: 25px;
@@ -309,4 +327,6 @@
             display: none;
         }
     }
+
+
 }
