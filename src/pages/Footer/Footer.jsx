@@ -8,6 +8,7 @@ import facebook from '../../assets/images/Footer/facebook.png';
 import message from '../../assets/images/Footer/message.png';
 import youtube from '../../assets/images/Footer/youtube.png';
 import instagram from '../../assets/images/Footer/instagram.png';
+import { Link } from 'react-router-dom';
 
 export const Footer = ({ weTransportRef }) => {
     return <div className={s.footer}>
@@ -61,7 +62,9 @@ export const Footer = ({ weTransportRef }) => {
                                 <h3>Loose</h3>
                                 <div className={s.looseContent}>
                                     <p>Privacy Policy</p>
-                                    <p>Terms and Conditions</p>
+                                    <Link to="/terms-and-conditions" className={s.link} onClick={() => window.scrollTo(0, 0)}>
+                                        Terms and Conditions
+                                    </Link>
                                     <p>Cookie policy</p>
                                     <p>Copyright</p>
                                     <p>Terms of Use</p>

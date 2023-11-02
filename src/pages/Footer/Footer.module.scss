@@ -3,6 +3,7 @@
 .footer {
   width: 100%;
   margin-top: 60px;
+
   @media (max-width: 736px) {
     margin-top: unset;
   }
@@ -125,9 +126,11 @@
     @media (max-width: 1050px) {
       height: unset;
     }
+
     @media (max-width: 525px) {
       padding-bottom: 20px;
     }
+
     .footerContent {
       display: flex;
       flex-direction: column;
@@ -265,9 +268,11 @@
                 @media (max-width: 670px) {
                   gap: 30px;
                 }
+
                 @media (max-width: 410px) {
                   gap: 0;
                 }
+
                 .subBlock {
 
                   >h4 {
@@ -283,6 +288,7 @@
                       margin-right: 18px;
                       font-size: 8px;
                     }
+
                     @media (max-width: 410px) {
                       margin-right: 10px;
 
@@ -333,6 +339,24 @@
                   font-size: 16px;
                   font-weight: 400;
                   line-height: 160%;
+
+                  @media (max-width: 550px) {
+                    margin-bottom: 9px;
+                    margin-right: 18px;
+                    font-size: 8px;
+                  }
+                }
+
+                .link {
+                  font-size: 16px;
+                  font-weight: 400;
+                  color: #ffffff;
+                  text-decoration: none;
+
+                  &:hover {
+                    text-decoration: underline;
+
+                  }
 
                   @media (max-width: 550px) {
                     margin-bottom: 9px;
