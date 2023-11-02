@@ -6,6 +6,7 @@ import { Help } from './pages/Help/Help';
 import { Home } from './pages/Home/Home';
 import { WeTransport } from './pages/WeTransport/WeTransport';
 import { WhyAmity } from './pages/WhyAmity/WhyAmity';
+import { EmptyPage } from './pages/EmptyPage/EmptyPage';
 
 function App() {
   const homeRef = useRef(null);
@@ -16,6 +17,7 @@ function App() {
   const redefiningMobilityRef = useRef(null);
   return (
     <div className={s.App}>
+      {/* <EmptyPage/> */}
       <Home homeRef={homeRef} guideRef={guideRef} helpRef={helpRef} weTransportRef={weTransportRef} whyAmityRef={whyAmityRef} redefiningMobilityRef={redefiningMobilityRef} />
       <Guide guideRef={guideRef} />
       <Help helpRef={helpRef} />
