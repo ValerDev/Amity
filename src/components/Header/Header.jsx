@@ -5,7 +5,7 @@ import email from "../../assets/images/Home/email.svg";
 import goToHomeIcon from "../../assets/images/Home/goToHomeIcon.svg";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 export const Header = () => {
   const [windowWidth, setWindowWidth] = useState(getWindowSize());
@@ -57,7 +57,9 @@ export const Header = () => {
             <Link to={"/"}>HOME</Link>
           </button>
           <button className={s.link}>
-            <HashLink smooth to={"/#weTransport"}>CALCULATOR</HashLink>
+            <HashLink smooth to={"/#weTransport"}>
+              CALCULATOR
+            </HashLink>
           </button>
           <img
             src={logoWhite}
@@ -66,10 +68,12 @@ export const Header = () => {
             onClick={() => navigate("/")}
           />
           <button className={`${s.link}`}>
-            <HashLink to={"/#whyAmity"}>ABOUT US</HashLink>
+            <HashLink smooth to={"/#whyAmity"}>
+              ABOUT US
+            </HashLink>
           </button>
           <button className={`${s.link}`}>
-            <HashLink smooth to="/#contactUs">
+            <HashLink smooth to="/#footer">
               HELP
             </HashLink>
           </button>
@@ -100,7 +104,11 @@ export const Header = () => {
               </HashLink>
             </button>
             <button className={`${s.link} ${s.mobileLink}`}>GUIDE</button>
-            <button className={`${s.link} ${s.mobileLink}`}>HELP</button>
+            <button className={`${s.link} ${s.mobileLink}`}>
+              <HashLink smooth onClick={scrollToContactUs}>
+                HELP
+              </HashLink>
+            </button>
           </div>
         </div>
       )}
