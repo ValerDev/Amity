@@ -1,0 +1,241 @@
+@import '../../assets/variables.scss';
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    margin-top: 107px;
+  
+    @media (max-width: 1600px) {
+        margin-top: 75px;
+    }
+    @media (max-width: 1100px) {
+        margin-top: 30px;
+    }
+    @media (max-width: 1050px) {
+        transform: unset;
+    }
+
+    @media (max-width: 525px) {
+        gap: unset;
+    }
+
+    .goToHomeIcon {
+        position: fixed;
+        right: 103px;
+        top: 10px;
+        cursor: pointer;
+        z-index: 999;
+        transition: .3s;
+        @media (max-width: 1600px) {
+            right: 50px;
+        }
+        @media (max-width: 1050px) {
+            width: 40px;
+            right: 10px;
+            top: 55px;
+        }
+        @media (max-width: 525px) {
+            width: 30px;
+            right: 10px;
+            top: 50px;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    .navBar {
+        display: flex;
+        align-items: flex-end;
+        gap: 69px;
+        @media (max-width: 1600px) {
+            gap: 58px;
+
+        }
+        .logo{
+            @media (max-width: 1600px) {
+               width: 206px;
+            }
+        }
+        .link {
+            min-width: 130px;
+            display: flex;
+            justify-content: flex-start;
+            white-space: nowrap;
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: .3s;
+            font-size: 20px;
+            outline: none;
+            font-weight: bold;
+
+            &:hover {   
+                color: $base-color;
+            }
+            @media (max-width: 1600px) {
+                font-size: 17px;     
+                min-width: 110px;
+            }
+            @media (max-width: 1100px) {
+                min-width: unset;
+
+            }
+        }
+        .mobileLink {
+            color: #FFF;
+            text-align: center;
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        @media (max-width: 1100px) {
+            transform: translateX(-20px);
+
+        }
+    }
+
+    .title {
+        color: #fff;
+        font-family: $second-font;
+        font-size: 96px;
+        margin-top: 177px;
+        margin-bottom: 154px;
+        letter-spacing: 2.88px;
+        font-weight: bold;
+        @media (max-width: 1600px) {
+            font-size: 75px;
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 1050px) {
+            margin-top: 177px;
+            font-size: 60px;
+        }
+
+        @media (max-width: 525px) {
+            font-size: 27px;
+            margin-bottom: 15px;
+            margin-top: unset;
+            margin-top: 91px;
+        }
+    }
+
+    .getAnInstantQuotieBtn {
+        cursor: pointer;
+        padding: 11.5px 49px;
+        border-radius: 10px;
+        background: #FF5408;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        transition: .3s;
+        letter-spacing: 3.1px;
+
+        &:hover {
+            box-shadow: 0px 0px 15px 2px #FF540877, inset 0px 0px 20px 3px rgba(0, 0, 0, 0.25);
+        }
+        @media (max-width: 1600px) {
+            padding: 9px 35px;
+            font-size: 17px;
+        }
+        @media (max-width: 525px) {
+            padding: 3.5px 6px;
+            border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 9px;
+            line-height: normal;
+            letter-spacing: 1.395px;
+            font-style: normal;
+        }
+    }
+}
+
+.mobileHeader {
+    width: 100%;
+    height: 45px;
+    background-color: $base-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 17px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    @media (max-width: 525px) {
+        height: 36px;
+    }
+    @media (max-width: 375px) {
+        padding: 8px 10px;
+    }
+    .logoBlock {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        gap: 10px;
+
+        .logoWhite {
+            width: 80px;
+
+            @media (max-width: 1050px) {
+                width: 45px;
+            }
+        }
+
+        .emailIcon {
+            width: 35px;
+            cursor: pointer;
+
+            @media (max-width: 1050px) {
+                width: unset;
+            }
+        }
+
+        .line {
+            width: 1px;
+            height: 100%;
+            background-color: $light-gray;
+            opacity: .5;
+        }
+    }
+
+    .linksBlock {
+        display: flex;
+        gap: 24px;
+        
+        @media (max-width: 375px) {
+            gap: 10px;
+        }
+
+        .link {
+            white-space: nowrap;
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: .3s;
+            outline: none;
+            font-size: 13px;
+
+            @media (max-width: 1050px) {
+                font-size: 9px;
+            }
+        }
+    }
+}

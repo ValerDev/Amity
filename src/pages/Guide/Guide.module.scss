@@ -1,0 +1,141 @@
+@import '../../assets/variables.scss';
+
+.guide {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    background-image: url('../../assets/images/Guide/GuidBackground.png');
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    // margin-top: -550px;
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        @media (max-width: 1600px) {
+            transform: scale(0.85);
+            gap: 0;
+        }
+        @media (max-width: 1050px) {
+            transform: unset;
+        }
+        @media (max-width: 525px) {
+            gap: 0;
+        }
+        .whatYouNeedBlock {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            gap: 34px;
+            max-width: 1018px;
+
+            @media (max-width: 525px) {
+                padding-bottom: 25px;
+                border-bottom: 13px solid $light-border;
+
+                .busMobile {
+                    width: 42px;
+                    height: 26px;
+                    background-image: url('../../assets/images/Guide/busMobile.png');
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    bottom: 0;
+                    right: 20px;
+                }
+            }
+
+            h3 {
+                font-family: $second-font;
+                font-size: 48px;
+                font-weight: bold;
+                
+                @media (max-width: 1050px) {
+                    font-size: 38px;
+                }
+
+                @media (max-width: 525px) {
+                    font-size: 22px;
+                }
+            }
+
+            p {
+                font-size: 24px;
+                color: $light-text;
+                text-align: center;
+
+                @media (max-width: 1050px) {
+                    font-size: 18px;
+                }
+
+                @media (max-width: 525px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .guideItems {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 50px 0 59px;
+            gap: 39px;
+            @media (max-width: 1600px) {
+                transform: scale(0.85);
+                padding: 0;
+            }
+            @media (max-width: 1050px) {
+                transform: unset;
+                padding: 50px 0 59px;
+                width: 100%;
+                align-items: center;
+                flex-direction: column;
+                background-image: url('../../assets/images/Guide/guideItemsBackground.png');
+                background-position: 100% 70px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            @media (max-width: 525px) {
+                background-position: 100% 52px;
+
+            }
+            @media (max-width: 480px) {
+                background-image: url('../../assets/images/Guide/guideItemsBackground.svg');
+
+                background-size: cover;
+
+                background-position: 100% 52px;
+            }
+        }
+    }
+
+    .ship {
+        margin-right: auto;
+        @media (max-width: 1600px) {
+            transform: scale(0.75) translateY(30px);
+            margin-top: -100px;
+        }
+        @media (max-width: 1050px) {
+           display: none;
+        }
+    }
+
+    .homeIcon {
+        display: none;
+
+        @media (max-width: 1050px) {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 31.435px;
+            height: 40.305px;
+            left: 30%;
+        }
+    }
+}

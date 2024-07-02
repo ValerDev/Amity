@@ -1,0 +1,17 @@
+.description {
+    width: 85%;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.container hr {
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: inline-block;
+        border: 1px solid #FF5408;
+        height: 2px;
+        width: 200px;
+        margin: 0 auto;
+    }
+}
