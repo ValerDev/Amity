@@ -130,7 +130,7 @@ export const Footer = ({ weTransportRef }) => {
                 <div className={s.line} />
                 <div className={s.LSBlock}>
                   <p className={s.license}>
-                    © 2023 TRUST CARGO TRUCKING SERVICES INC
+                    © 2024 TRUST CARGO TRUCKING SERVICES INC
                     <br />
                     DBA Amity Transportation
                     <br />

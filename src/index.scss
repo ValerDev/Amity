@@ -42,6 +42,11 @@ code {
   src: url("./assets/fonts/Agency_FB_Light.ttf");
 }
 
+
+a {
+  font-family: "Poppins";
+}
+
 h1 {
   margin: 2rem 0;
   text-align: center;
@@ -107,6 +112,13 @@ h6 {
 
 strong {
   color: #FF5408;
+}
+
+li {
+  @media (max-width: 1024px) {
+      font-size: 11px;
+      margin: .5rem 0;
+    }
 }
 
 p {

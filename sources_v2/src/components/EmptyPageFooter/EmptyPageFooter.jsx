@@ -60,7 +60,7 @@ export const EmptyPageFooter = ({ weTransportRef }) => {
                         <div className={s.line} />
                         <div className={s.LSBlock}>
                             <p className={s.license}>
-                                © 2023 TRUST CARGO TRUCKING SERVICES INC<br />
+                                © 2024 TRUST CARGO TRUCKING SERVICES INC<br />
                                 DBA Amity Transportation<br />
                                 1200 Brickell Ave Ste 1950<br />
                                 Miami, FL 33131<br />

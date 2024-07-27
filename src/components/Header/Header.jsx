@@ -33,14 +33,6 @@ export const Header = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
-  // const scrollToContactUs = () => {
-  //   window.scrollTo({ top: window.innerHeight, left: 0, behavior: "smooth" });
-  // };
-
-  // const goToElement = (ref) => {
-  //   ref.current?.scrollIntoView({ behavior: "smooth" });
-  // };
-
   return (
     <div className={s.orangeHeader}>
       {windowScrollPosition >= 1000 ? (
@@ -105,7 +97,7 @@ export const Header = () => {
             </button>
             <button className={`${s.link} ${s.mobileLink}`}>GUIDE</button>
             <button className={`${s.link} ${s.mobileLink}`}>
-              <HashLink smooth onClick={scrollToContactUs}>
+              <HashLink smooth to="/#contactUs">
                 HELP
               </HashLink>
             </button>
